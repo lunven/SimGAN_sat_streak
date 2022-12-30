@@ -1,12 +1,13 @@
-## Training the Unet
+## Training the SIMGan
 The user has to provide different parameters:
-* --i name of the numpy array containing refined images
-* --o name of the numpy array containing grountruth of the refined images
+
+* --o beginning of the name given to synthetic images, their targets and the vector indicating the presence of streak in the synthetic image. This 
+parameter has been chosen when these three numpy arrays have been created in 'generate_synthetic.py'
 * --l learning rate 
-* --v number of validation images
+* --b batch size
 * --n number of epochs
   
-  Example of command lign: the unet will be trained for one epoch with a learning rate equal to 0.0001. After each epoch 500 images will be used to test the training.
+  Example of command lign: the simgan will be trained for five epoch with a learning rate equal to 0.001 and with batch size equal to 24. 
 ```
-python unet_training.py --i "refined_l=1e-6small_.npy" --o "target_l=1e-6_.npy" --l 1e-4 --v 500 --n 1
+#python simgan_training.py  --o "multi" --b 24 --n 5  --l 0.001
 ```
