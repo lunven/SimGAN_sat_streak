@@ -10,3 +10,10 @@ The user needs to provide different parameters:
 ```
 python generate_synthetic.py --i "synthetic/" --o "multi"
 ```
+# Get patches of real streaks 
+A csv file where it is written if an image contains a streak or not and if yes the coordinates of the two extreme points of the streak. 
+The user needs to provide:
+* --i: path to the png images containing real satellite streaks
+```
+python simgan_training.py --i "images/" 
+```
