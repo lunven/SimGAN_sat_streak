@@ -9,7 +9,7 @@ parameter has been chosen when these three numpy arrays have been created in 'ge
   
   Example of command lign: the simgan will be trained for five epoch with a learning rate equal to 0.001 and with batch size equal to 24. 
 ```
-#python simgan_training.py  --o "multi" --b 24 --n 5  --l 0.001
+python simgan_training.py  --o "multi" --b 24 --n 5  --l 0.001
 ```
 
 ## Generating refined images and their target from the refiner model
@@ -24,5 +24,5 @@ parameter has been chosen when these three numpy arrays have been created in 'ge
   
   Example of command lign: the simgan will be trained for five epoch with a learning rate equal to 0.001 and with batch size equal to 24. 
 ```
-#python generate_refined_images.py --o "multi" --i "refined_test.npy" --k "target_test.npy" --m "refiner.h5"
+python generate_refined_images.py --o "multi" --i "refined_test.npy" --k "target_test.npy" --m "refiner.h5"
 ```
