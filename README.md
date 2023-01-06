@@ -7,7 +7,9 @@ Example of png image provided by LASTRO containing a streak:
  </p>
 
 # Generate synthetic images from real fits images
-It consists in artificially generating streaks which are then overlayed on real astronomical images.
+It consists in artificially generating streaks which are then overlayed on real astronomical images. To get these backgrounds, fits images provided by
+LASTRO are used. They do not have any streak in them. These fits images are mosaics, of 16000 x 16000 pixels, composed of 32 blocks of 2000 x 4000 pixels separated by NaN values. 
+
 The user needs to provide different parameters:
 * --i: path to the fits images
 * --o: beginning of the name given to the generated synthetic images, their targets and array indicating wether or not a streak is present in the image
