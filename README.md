@@ -20,7 +20,7 @@ The user needs to provide different parameters:
 python generate_synthetic.py --i "synthetic/" --o "multi"
 ```
 <p align="center">
-  <img src="images/synth_streak" width="100" >
+  <img src="images/synth_streak.png" width="100" >
   <figcaption>Example a background and a synthetic streak overlayed on it.</figcaption>
  </p>
 # Get patches of real streaks 
