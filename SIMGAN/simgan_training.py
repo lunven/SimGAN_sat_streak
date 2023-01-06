@@ -18,26 +18,26 @@ import random
 import utils.prologue as prologue
 
 
-#python simgan_training.py --i "../" --o "multi" --b 24 --n 5  --l 0.001
+#python simgan_training.py  --o "multi" --b 24 --n 5  --l 0.001
 
 def main(args):
     
-    data_dir = args.i 
+    
     label = args.o 
     ######################### Load the synthetic and real images##################################
     #Load the synthetic images
-    s_img = np.load(data_dir + label + '_test_samples.npy')
+    s_img = np.load("../" + label + '_test_samples.npy')
     s_img = np.moveaxis(s_img, 1,-1)
     s_img *=255
 
     #Load the real images
-    r_imgs = np.load(data_dir + '/real_images.npy')
+    r_imgs = np.load("../" + '/real_images.npy')
     r_imgs = np.expand_dims(r_imgs, axis=3)
     print('Number of real images:{}'.format(r_imgs.shape[0]))
 
 
     #Load the vector describing wether or not there is a streak in the patch
-    satellite = np.load(data_dir+label+'_test_patch_targets.npy')
+    satellite = np.load("../"+label+'_test_patch_targets.npy')
     a = np.array(satellite)
     ind = np.where(a==1)[0]
 
@@ -45,7 +45,7 @@ def main(args):
     print('Number of synthetic images with streak:{}'.format(s_imgs.shape[0]))
 
     #load the target image, the one only with a streak
-    target_img = np.load(data_dir+label+'_test_targets.npy')
+    target_img = np.load("../"+label+'_test_targets.npy')
     target_imgs = target_img[ind]
     target_imgs = np.expand_dims(target_imgs, axis=3)
     print('Number of target with streak:{}'.format(target_imgs.shape[0]))

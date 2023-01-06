@@ -17,11 +17,11 @@ def main(args, seed = 123456789):
     
     data_dir= "../"+args.i
     data_dir_tar = "../"+args.o
-    input_img = np.load(data_dir)[0:600]
+    input_img = np.load(data_dir)
     #this lign is necessary to map the pixel values from [-1,1] to  [0,1]
     input_img=((input_img+1)*127.5)/255
 
-    target_img = np.load(data_dir_tar)[0:600]
+    target_img = np.load(data_dir_tar)
     target_img = target_img.squeeze()
     print('Number of pairs: {i}'.format(i=target_img.shape[0]))
     import random
