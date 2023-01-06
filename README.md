@@ -20,8 +20,8 @@ The user needs to provide different parameters:
 python generate_synthetic.py --i "synthetic/" --o "multi"
 ```
 <p align="center">
-  <img src="images/synth_streak.png" width="100" >
-  <figcaption>Example a background and a synthetic streak overlayed on it.</figcaption>
+  <img src="images/synth_streak.png" width="170" >
+  
 </p>
 
 # Get patches of real streaks 
@@ -31,3 +31,7 @@ The user needs to provide:
 ```
 python simgan_training.py --i "images/" 
 ```
+<p align="center">
+  <img src="images/real_streaks2.png" width="150" >
+  
+</p>
