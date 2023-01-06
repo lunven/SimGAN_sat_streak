@@ -7,6 +7,7 @@ What is proposed in this project is an automated method to improve the reality o
  </p>
 
 # Generate synthetic images from real fits images
+It consists in artificially generating streaks which are then overlayed on real astronomical images.
 The user needs to provide different parameters:
 * --i: path to the fits images
 * --o: beginning of the name given to the generated synthetic images, their targets and array indicating wether or not a streak is present in the image
@@ -18,6 +19,10 @@ The user needs to provide different parameters:
 ```
 python generate_synthetic.py --i "synthetic/" --o "multi"
 ```
+<p align="center">
+  <img src="images/synth_streak" width="100" >
+  <figcaption>Example a background and a synthetic streak overlayed on it.</figcaption>
+ </p>
 # Get patches of real streaks 
 A csv file where it is written if an image contains a streak or not and if yes the coordinates of the two extreme points of the streak. 
 The user needs to provide:
