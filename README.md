@@ -2,11 +2,12 @@
 With the number of space debris growing day by day, it is essential to be able to monitor them to ensure safety on earth and in space. 
 What is proposed in this project is an automated method to improve the reality of synthetic satellite streaks  in astronomical images using a deep learning method: SimGAN. It is a type of generative adversarial network, specifically designed for image-to-image translation tasks. For this, pictures of space taken with an OmegaCAM camera on the VLT telescope in Chile are used.  The efficiency of the refinement is tested by comparing the segmentations obtained with a UNet trained on synthetic images and one trained with synthetic images refined by the SimGAN model. Unfortunately, no clear improvements are observed.
 <p align="center">
-  <img src="images/real_image.png" width="350" >
-  
-</p>
+  <img src="images/real_image.png" width="100" >
+  <figcaption>Example of an image containing a satellite streak.</figcaption>
+ </p>
 
 # Generate synthetic images from real fits images
+It consists in artificially generating streaks which are then overlayed on real astronomical images.
 The user needs to provide different parameters:
 * --i: path to the fits images
 * --o: beginning of the name given to the generated synthetic images, their targets and array indicating wether or not a streak is present in the image
@@ -18,6 +19,11 @@ The user needs to provide different parameters:
 ```
 python generate_synthetic.py --i "synthetic/" --o "multi"
 ```
+<p align="center">
+  <img src="images/synth_streak.png" width="100" >
+  <figcaption>Example a background and a synthetic streak overlayed on it.</figcaption>
+</p>
+
 # Get patches of real streaks 
 A csv file where it is written if an image contains a streak or not and if yes the coordinates of the two extreme points of the streak. 
 The user needs to provide:
