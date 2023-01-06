@@ -18,18 +18,22 @@ The user needs to provide different parameters:
 ```
 python generate_synthetic.py --i "synthetic/" --o "multi"
 ```
+Example of generated synthetic streaks and their backgrounds:
 <p align="center">
   <img src="images/synth_streak.png" width="170" >
   
 </p>
 
-# Get patches of real streaks 
-A csv file where it is written if an image contains a streak or not and if yes the coordinates of the two extreme points of the streak. 
-The user needs to provide:
+# Get patches of real streaks
+This part can not be reused if the user doesn't have access to the LASTRO images and to a csv file provided by LASTRO. In this csv is written 
+if an image contains a streak or not and if yes the coordinates of the two extreme points of the streak. 
+If the user has access to this, then he needs to provide:
 * --i: path to the png images containing real satellite streaks
+Example of command:
 ```
 python simgan_training.py --i "images/" 
 ```
+Example of patches obtained with LASTRO images:
 <p align="center">
   <img src="images/real_streaks2.png" width="170" >
   
