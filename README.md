@@ -4,10 +4,7 @@ What is proposed in this project is an automated method to improve the reality o
 <p align="center">
   <img src="images/real_image.png" width="100" >
   <figcaption>Example of an image containing a satellite streak.</figcaption>
- 
-  
-  
-</p>
+ </p>
 
 # Generate synthetic images from real fits images
 The user needs to provide different parameters:
