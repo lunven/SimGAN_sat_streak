@@ -16,6 +16,7 @@ def main(args, seed = 123456789):
     
     path_of_images = args.i
     path_syn = [] #list of strings corresponding to the path of fits images
+    # I had a folder containing three folder containing fits images, hence the following two lines
     for j in os.listdir(path_of_images)[1:]:
         for i in os.listdir(path_of_images+ str(j) ):
             path_syn.append(path_of_images+str(j)+'/'+str(i))
