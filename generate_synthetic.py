@@ -30,7 +30,7 @@ def main(args, seed = 123456789):
     for w in path_syn:
         print('Image loaded:{i}'.format(i=w))
         im = fits.open(w)
-        for s in range(1,31,5):
+        for s in range(1,31):
 
             h = im[s].data
             raw_k = scale_image(h.copy())
