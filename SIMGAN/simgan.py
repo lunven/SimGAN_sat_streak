@@ -15,6 +15,7 @@ from matplotlib import pyplot as plt
 from itertools import groupby
 from skimage.util import montage as montage2d
 
+#taken from: https://github.com/mjdietzx/SimGAN
 """
 Module to plot a batch of images along w/ their corresponding label(s)/annotations and save the plot to disc.
 
