@@ -12,6 +12,6 @@ The user has to provide different parameters:
   
   Example of command lign: the unet will be trained for one epoch with a learning rate equal to 0.0001. After each epoch 500 images will be used to test the training. In the end of the training the model will be saved  under the name: "model.h5"
 ```
-python unet_training.py --i "refined_l=1e-6small_.npy" --o "target_l=1e-6_.npy" --l 1e-4 --v 500 --n 1 --k "model.h5"
+python unet_training.py --i "refined.npy" --o "target.npy" --l 1e-4 --v 500 --n 1 --k "model.h5"
 ```
 
