@@ -18,6 +18,7 @@ The user needs to provide different parameters:
   * multi_test_samples.npy: generated synthetic images. Images without streaks are real patches.
   * multi_test_targets.npy: grountruths corresponding to the generated images
   * multi_test_patch_targets.npy: array of binary values indicating wether or not a streak is present in each image
+  The fits images used for the background were in the folder "/synthetic"
 ```
 python generate_synthetic.py --i "synthetic/" --o "multi"
 ```
