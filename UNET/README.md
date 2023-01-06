@@ -1,3 +1,6 @@
+## Description of the files:
+* unet.py: contains the UNet and the different functions necessary to the training
+* unet_training: file which needs to be run if the user wants to train the model
 ## Training the Unet
 The user has to provide different parameters:
 * --i name of the numpy array containing refined images
