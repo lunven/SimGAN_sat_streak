@@ -2,7 +2,7 @@
 The user has to provide different parameters:
 
 * --o beginning of the name given to synthetic images, their targets and the vector indicating the presence of streak in the synthetic image. This 
-parameter has been chosen when these three numpy arrays have been created in 'generate_synthetic.py'
+parameter has been chosen when these three numpy arrays have been created in 'generate_synthetic.py'. 
 * --l learning rate 
 * --b batch size
 * --n number of epochs
