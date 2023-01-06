@@ -22,7 +22,8 @@ python generate_synthetic.py --i "synthetic/" --o "multi"
 <p align="center">
   <img src="images/synth_streak.png" width="100" >
   <figcaption>Example a background and a synthetic streak overlayed on it.</figcaption>
- </p>
+</p>
+
 # Get patches of real streaks 
 A csv file where it is written if an image contains a streak or not and if yes the coordinates of the two extreme points of the streak. 
 The user needs to provide:
