@@ -16,9 +16,9 @@ import random
 
 
 import utils.prologue as prologue
+#A big part was taken from:https://github.com/mjdietzx/SimGAN
 
 
-#python simgan_training.py  --o "multi" --b 24 --n 5  --l 0.001
 
 def main(args):
     
